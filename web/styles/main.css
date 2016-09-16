@@ -1,45 +1,85 @@
 *{
-    font-family: Gotham,sans-serif;
+  font-family: Gotham,sans-serif;
 }
+
+html{
+  background: url(../images/bats.gif) repeat; 
+}
+
+body{
+  background: #fff;
+  box-shadow: 0 0 5px 5px #000;
+  margin: 1em auto;
+  width:800px;
+}
+
 .articleTitle::first-letter{
-    font-size: 200%;
+  font-size: 200%;
 }
+
 .subTitle{
-    margin-top: .1em;
-    padding-left: 5em;
+  margin-top: .1em;
+  padding-left: 5em;
 }
+
 img{
-    float:left;
+  float:left;
 }
+
+article{
+  padding:0 0 0 1em;
+}
+
 h1{
-    color: orange;
-    font-style: italic;
-    margin-bottom: .1em;
-    text-shadow: .05em .05em #000;
-    padding-left: 3em;
+  margin-bottom: .1em;
+  padding-left: 3em;
 }
-a{
-    color:orange;
-}
-a:hover{
-    color:green;
-}
-ul{
-    line-height: 1.5em;
-}
-footer{
-    text-align: center;
-    font-size:80%;
-}
+
 h2{
-    font-size:1.4em;
+  font-size:1.4em;
 }
+
 h3{
-    font-size:1.2em;
+  font-size:1.2em;
 }
+
 h4{
-    font-size:1.1em;
+  font-size:1.1em;
 }
+
+a{
+  color:orange;
+}
+
+a:hover{
+  color:green;
+}
+
+ul{
+  line-height: 1.5em;
+}
+
+header{
+  background: orange;
+  background:linear-gradient(45deg,white,orange,orange,black);
+  border-color: #000;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  padding: .5em 0 0 .5em;
+}
+
+footer{
+  background: orange;
+  background:linear-gradient(45deg,black,orange,orange,white);
+  border-color: #000;
+  border-style: solid;
+  border-width:1px 0px 0px 0px;
+  font-size:80%;
+  padding-bottom: 1em;
+  padding-top: 2em;
+  text-align: center;
+}
+
 p{
-    font-size: 1em;
+  font-size: 1em;
 }
