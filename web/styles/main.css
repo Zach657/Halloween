@@ -9,7 +9,7 @@ html{
 body{
   background: #fff;
   box-shadow: 0 0 5px 5px #000;
-  margin: 1em auto;
+  margin: .5em auto;
   width:800px;
 }
 
@@ -27,7 +27,7 @@ body{
 }
 
 article{
-  margin-left: 160px;
+  margin-left: 165px;
   padding:0 1em 0 0;
 }
 
@@ -37,7 +37,8 @@ h1{
 }
 
 h2{
-  font-size:1.4em;
+  margin-top: 0.5em;
+  font-size: 1.4em;
 }
 
 h3{
@@ -49,16 +50,7 @@ h4{
 }
 
 a{
-  color:orange;
-}
-
-a:hover{
-  color:green;
-}
-
-ul{
-  line-height: 1.5em;
-  margin-top: 0;
+  color: orange;
 }
 
 header{
@@ -87,7 +79,61 @@ p{
   font-size: 1em;
 }
 
-nav{
+nav.horizontal ul{
+  background: black;
+  margin: 0;
+  padding: 0;
+}
+
+nav.horizontal li{
+  border:2px solid black;
+  display:inline-block;
+  line-height: 2em;
+  
+  width: 19%;
+}
+
+nav.horizontal a{
+  color: white;
+  display:block;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav.horizontal a.home{
+  color: orange;
+}
+
+nav.vertical{
   float:left;
   width: 160px;
 }
+
+nav.vertical ul{
+  line-height: 1.5em;
+  margin: 0;
+  padding: 1.2em .8em;
+}
+
+nav.vertical li{
+  border:2px solid black;
+  background:orange;
+  line-height: 2em;
+  margin-bottom: .25em;
+  display:block;
+}
+
+nav li:hover{
+  background:grey;
+}
+
+nav.vertical a{
+  color:black;
+  display:block;
+  font-weight: bold;
+  text-decoration: none;
+  text-indent: .5em;
+}
+
+
+
