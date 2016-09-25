@@ -27,7 +27,7 @@ body{
   float:left;
 }
 
-article{
+section{
   margin-left: 165px;
   margin-right: 1em;;
 }
@@ -141,6 +141,7 @@ nav.vertical a{
 table{
   border-spacing: 0;
   margin: 1em;
+  padding-right: 1em;
   width: 100%;
 }
 

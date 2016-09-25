@@ -137,9 +137,9 @@ nav.horizontal a{
 #leftSidebar li{
   border:2px solid black;
   background:orange;
+  display:block;
   line-height: 2em;
   margin-bottom: .25em;
-  display:block;
 }
 
 nav li:hover{
