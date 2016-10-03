@@ -1,0 +1,293 @@
+/*
+  Copyright © James Greenwell
+  Elon University
+  September 12th, 2016
+*/
+*{
+  font-family: Gotham,sans-serif;
+}
+
+html{
+  background: url(../images/bats.gif) repeat; 
+}
+
+body{
+  background: #fff;
+  border-color: black;
+  border-style: solid;
+  border-width: .15em;
+  box-shadow: 0 0 3px 3px #000;
+  margin: .1em auto;
+  max-width:960px;
+  width:95%
+}
+
+.articleTitle::first-letter{
+  font-size: 200%;
+}
+
+.subTitle{
+  margin-top: .2em;
+}
+
+#logo{
+  display: inline-block;
+  height:auto;
+  max-width:85px;
+  min-width:40px;
+  width:10%;
+}
+
+#cat{
+  height: auto;
+  max-width:154px;
+  min-width:80px;
+  width:35%;
+}
+
+#title{
+  display: inline-block;
+  width: 80%;
+}
+
+article{
+  margin-left: 25%;
+  padding:0 1em 0 0;
+}
+
+h1{
+  margin-top: 0;
+  margin-bottom: .1em;
+}
+
+h2{
+  font-size: 1.4em;
+  margin-bottom: 0.1em;
+  margin-top: 0.5em;
+}
+
+h3{
+  font-size:1.2em;
+}
+
+h4{
+  font-size:1.1em;
+}
+
+a{
+  color:orange;
+}
+
+header{
+  background: orange;
+  background:linear-gradient(45deg,white,orange,orange,black);
+  border-color: #000;
+  border-style: solid;
+  border-width: 0 0 .1em 0;
+  padding: 1% 0 0 1%;
+}
+
+footer{
+  background: orange;
+  background:linear-gradient(45deg,black,orange,orange,white);
+  border-color: #000;
+  border-style: solid;
+  border-width:.1em 0px 0px 0px;
+  clear: both;
+  font-size:80%;
+  padding-bottom: 1em;
+  padding-top: 2em;
+  text-align: center;
+}
+
+p{
+  font-size: 1em;
+}
+
+#horizontal{
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+#horizontal ul{
+  background: black;
+  margin: 0;
+  padding: 0;
+}
+
+#horizontal li{
+  display:inline-block;
+  line-height: 2em;
+  width: 19%;
+}
+
+#horizontal a{
+  color: white;
+  display:block;
+  text-align: center;
+  text-decoration: none;
+}
+
+#horizontal a.current{
+  color: orange;
+}
+
+#vertical{
+  float:left;
+  min-width: 150px;
+  width: 24%;
+}
+
+#vertical ul{
+  line-height: 1.5em;
+  margin: 0;
+  padding: 1.2em 5%;
+}
+
+#vertical li{
+  border:2px solid black;
+  background:orange;
+  line-height: 2em;
+  margin-bottom: .25em;
+  display:block;
+}
+
+nav li:hover{
+  background:grey;
+}
+
+#vertical a{
+  color:black;
+  display:block;
+  font-weight: bold;
+  text-decoration: none;
+  text-indent: .5em;
+}
+
+#menu{
+  display:none;
+}
+
+@media screen and (max-width:800px){
+  p,a{
+    font-size: 90%;
+  }
+  
+  h1{
+    font-size:1.8em;
+  }
+  
+  h2{
+    font-size:1.2em;
+  }
+  
+  h3{
+    font-size:1em;
+  }
+
+  h4{
+    font-size:.9em;
+  }
+  
+  html{
+    background: none;
+  }
+  body{
+    box-shadow: none;
+    width:95%;
+  }
+}
+
+@media screen and (max-width:767px){
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #vertical{
+    margin: 0 auto;
+    float:none;
+    order: 2;
+  }
+  
+  #abreviated_nav{
+    background-color:black;
+    display:block;
+    order:1;
+  }
+  
+  article{
+    margin:0 1em 0 1em;
+    order: 1;
+  }
+  
+  #abreviated_nav ul{
+    padding: 0;
+    margin:0;
+  }
+  
+  #abreviated_nav #menu{
+    display: block;
+    text-align: right;
+    line-height: 2em;
+    width:100%;
+  }
+  
+  #horizontal{
+    display: none;
+    order:2;
+  }
+  
+  #horizontal.open {
+    display:block;
+    position: absolute;
+  }
+  
+  #horizontal ul{
+    width:35%;
+  }
+  
+  #horizontal li{
+    display:block;
+    width: 100%;
+  }
+  #horizontal a{
+    padding-left: .75em;
+    text-align: left;
+  }
+  
+  #menu a{
+    color:white;
+    padding-right: 2em;
+  }
+  #menu_div{
+    display:flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:479px){
+  p,a{
+    font-size: 80%;
+  }
+  
+  h1{
+    font-size:1.2em;
+  }
+  
+  h2{
+    font-size:1em;
+  }
+  
+  h3{
+    font-size:.8em;
+  }
+
+  h4{
+    font-size:.7em;
+  }
+}
+
+
+

@@ -9,18 +9,21 @@
 	<meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/main_rwd.css">
 	<title>Halloween Store Main Page</title>
 </head>
 
 <body>
   <header>
-    <img class="logo" src="images/pumpkin.gif" alt="pumpkin logo" width="85" height="78">
+    <img id="logo" src="images/pumpkin.gif" alt="pumpkin logo">
+    <div id="title">
     <h1>The Halloween Store</h1>
     <h2 class="subTitle">For the little Goblin in all of us!</h2>
+    </div>
   </header>
     <main>
-      <nav class ="horizontal">
+      <div id="menu_div">
+      <nav id="horizontal">
         <ul>
           <li><a href="index.html" class="current">Home</a></li>
           <li><a href="slides/products/index.html">Product List</a></li>
@@ -29,7 +32,14 @@
           <li><a href="email.html">Join Email</a></li>
         </ul>
       </nav>
-      <nav class="vertical">
+      <nav id="abreviated_nav">
+        <ul>
+          <li id="menu"><a>MENU &#9776</a></li>
+        </ul>
+      </nav>
+      </div>
+      <script src="js/menu_script.js"></script>
+      <nav id="vertical">
         <ul>
           <li><a href="slides/products/props.html">Props</a></li>
           <li><a href="slides/products/costumes.html">Costumes</a></li>
@@ -50,7 +60,7 @@
           list, I will keep you up-to-date on all things Halloween.       
       </p>
       <h3>Product of the Week </h3>
-      <a href="slides/products/cat.html"><img src="images/cat1.jpg" alt="deranged cat" width="154" height="122"><br>20&quot; Deranged Cat</a>
+      <a href="slides/products/cat.html"><img src="images/cat1.jpg" alt="deranged cat" id="cat"><br>20&quot; Deranged Cat</a>
       <h4>My guarantee</h4>
       <p>
             If you aren't completely satisfied with everything you buy from my site, 
